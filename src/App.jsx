@@ -65,17 +65,16 @@ export default function App() {
 
     
       <iframe
-        src="/resume.pdf"
+        src="/portfolio/resume.pdf"
         width="100%"
         height="400px"
         title="Resume Preview"
       ></iframe>
       
 
-      {/* Download Button */}
-      <a href="/resume.pdf" download="Chiranjeevi_Resume.pdf">
-        <button className="download-btn">Download Resume</button>
-      </a>
+      <a href={`${import.meta.env.BASE_URL}resume.pdf`} download="Chiranjeevi_Resume.pdf">
+  <button className="download-btn">Download Resume</button>
+</a>
 
     </div>
   </div>
